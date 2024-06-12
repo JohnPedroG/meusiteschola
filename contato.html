@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Informática</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .form-container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+  
+      .form-label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      .form-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+  
+      .form-button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .error-message {
+        color: red;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Contato</h1>
+      <form id="contatoForm">
+        <label class="form-label">Nome:</label>
+        <input type="text" id="nome" class="form-input" required>
+        <div class="error-message" id="nomeErro"></div>
+  
+        <label class="form-label">Email:</label>
+        <input type="email" id="email" class="form-input" required>
+        <div class="error-message" id="emailErro"></div>
+  
+        <label class="form-label">Mensagem:</label>
+        <textarea id="mensagem" class="form-input" required></textarea>
+        <div class="error-message" id="mensagemErro"></div>
+  
+        <button type="submit" class="form-button">Enviar</button>
+      </form>
+    </div>
+<footer> 
+    <p> Meu Site sobre Informatica - 2024.</p>
+</footer>
+</body>
+</html>
